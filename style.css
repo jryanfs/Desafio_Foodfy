@@ -1,0 +1,232 @@
+
+/* ----- container ------ */
+
+.container{
+  max-width: 980px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----- itens menu ------ */
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+/* ----- img ------ */
+
+.img_class{
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- header ------ */
+
+header{
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+header .logo{
+  width: 15%;
+}
+
+header .menu{
+  padding: 0px 40px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+
+header .menu a {
+  margin-left: 30px;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s all ease-in;
+}
+
+header .menu a:hover{
+  color: #c79188;
+}
+
+/* ----- Melhores Receitas ------ */
+
+.melhores_Receitas {
+  width: 100%;
+  height: 380px;
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 15px 0 15px;
+  margin-bottom: 3rem;
+}
+
+/* ----- Melhores Receitas (img Chefe) ------ */
+
+.melhores_Receitas .melhores_receitas_Chefe{
+  text-align: center;
+  width: 40%;
+  margin-top: 50px;
+}
+
+/* ----- Melhores Receitas ( textos )------ */
+
+.melhores_Receitas .melhores_receitas_texto{  
+  width: 60%;
+  padding: 35px 45px;
+  margin: 50px 0px;
+}
+
+/* ----- Melhores Receitas ( h2 ) ------ */
+
+.melhores_receitas_texto h2{
+  
+  font-weight: bold;
+  font-size: 28px;
+  color: #111111;
+  margin-bottom: 10px;
+}
+/* ----- Melhores Receitas ( p ) ------ */
+
+.melhores_receitas_texto p {
+  
+  font-size: 18px;
+  line-height: 26px;
+  width: 320px;
+  color: rgb(17,17,17,0.7) ;
+}
+/* ----- Mais acessadas ------- */
+.mais_Acessadas h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 20px 0px;
+}
+/* ------ Description ------ */
+.description h2 {
+  padding: 15px 0px;
+  font-size: 18px;
+}
+/* ------ autor ------- */
+.autor p {
+  opacity: 0.7;
+  padding-bottom: 15px;
+
+}
+
+/* ------ Cards ------ */
+
+.card_img img {  
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card {
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding-bottom: 3rem;
+}
+.end{
+  width: 100%;
+  height: 60px;
+  background-color: #EEEEEE;
+  
+}
+.end p {
+  padding: 22px;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+}
+
+
+/* ---------- SOBRE ------- */
+.sobre_Foodfy h2{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 30px 0px;
+}
+
+.sobre_Foodfy p {
+  
+  padding-bottom: 45px;
+  font-size: 19px;
+  color: #444444;
+  line-height: 30px;
+}
+
+
+
+/* ------- Modal ------- */
+.modal_overlay {
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal {
+  background-color: white;
+  width: 40%;
+  height: 60%;
+  margin: 160px auto;
+  border-radius: 30px;
+  position: relative;
+}
+.modal .close{
+  font-size: 19px;
+  color: #444444;
+  position: absolute;
+  bottom: 30px;
+  right: 225px;
+  cursor: pointer;
+}
+/* ------ MODAL ACTIVE ----- */
+.modal_overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+.modal_content{
+  align-items: center;
+}
+.modal_content img{
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border-radius: 15px;
+  
+}
+.modal .description{
+  color: black;
+}
+.text{
+  position: absolute;
+  bottom: 100px;
+  right: 130px;
+  text-align: center;
+  width: 300px;
+}
+.text h2 {
+  font-size: 20px;
+ font-weight: bold;
+ padding-bottom: 15px;
+  
+}
+.text p {
+  opacity: 0.7;
+}
